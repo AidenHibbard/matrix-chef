@@ -1,0 +1,83 @@
+.chef-face {
+  font-size: 50px;
+  color: var(--matrix-color);
+  white-space: pre;
+  text-align: center;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.chef-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--matrix-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* idle — gentle bob */
+.mood-idle {
+  text-shadow: 0 0 8px var(--matrix-color);
+  animation: bob 1.8s ease-in-out infinite;
+}
+
+/* curious — blinking eyes */
+.mood-curious {
+  text-shadow: 0 0 8px var(--matrix-color);
+  animation: blink-eyes 2.5s infinite;
+}
+
+/* thinking — subtle pulse */
+.mood-thinking {
+  text-shadow: 0 0 8px var(--matrix-color);
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* happy — glowing pulse */
+.mood-happy {
+  text-shadow: 0 0 8px var(--matrix-color);
+  animation:
+    bob 1s ease-in-out infinite,
+    pulse-glow 1.5s ease-in-out infinite;
+}
+
+/* thinking — subtle pulse */
+.mood-error {
+  text-shadow: 0 0 8px var(--matrix-color);
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes blink-eyes {
+  0%,
+  88%,
+  100% {
+    opacity: 1;
+  }
+  92%,
+  96% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 8px var(--matrix-color);
+  }
+  50% {
+    text-shadow:
+      0 0 20px var(--matrix-color),
+      0 0 40px var(--matrix-color);
+  }
+}
