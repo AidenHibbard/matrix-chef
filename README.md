@@ -3,7 +3,7 @@
 A Matrix-themed AI recipe generator built with React and Vite. Enter your ingredients and let Chef Claude generate a recipe for you. Served through a retro terminal interface.
 
 ## 📸 Preview
-![Preview workflow](./screenshots/Matrix-Chef-Workflow3.png)
+![Preview workflow](./screenshots/Matrix-Chef-Workflow.png)
 
 ## ✨ Features
 - Matrix-style terminal UI
