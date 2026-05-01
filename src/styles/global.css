@@ -83,13 +83,17 @@ html, body, #root {
 }
 
 @media (max-width: 768px) {
+    body {
+      min-height: 100dvh;
+    }
+
     .terminal {
-        padding: 12px;
-        margin: 50px 12px;
-        min-width: 350px;
+      padding: 12px;
+      margin: 50px 12px;
+      min-width: 350px;
     }
 
     .loading-message {
-        font-size: 14px;
+      font-size: 14px;
     }
 }
