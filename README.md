@@ -2,6 +2,9 @@
 
 A Matrix-themed AI recipe generator built with React and Vite. Enter your ingredients and let Chef Claude generate a recipe for you. Served through a retro terminal interface.
 
+## 🔗 Live Demo
+[matrix-chef.vercel.app](https://matrix-chef.vercel.app/)
+
 ## 📸 Preview
 ![Preview workflow](./screenshots/Matrix-Chef-Workflow.png)
 
@@ -46,6 +49,7 @@ npm run dev
 matrix-chef/
 ├── api/
 │   └── ai.js                 # Vercel serverless function
+├── screenshots/              # README screenshot image
 ├── src/
 │   ├── assets/icons/         # SVG food icons for particle animation
 │   ├── components/           # React components
