@@ -81,3 +81,15 @@ html, body, #root {
   font-weight: bold;
   padding-bottom: 12px;
 }
+
+@media (max-width: 768px) {
+    .terminal {
+        padding: 12px;
+        margin: 50px 12px;
+        min-width: 350px;
+    }
+
+    .loading-message {
+        font-size: 14px;
+    }
+}
